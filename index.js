@@ -4,6 +4,7 @@
     var result = document.querySelector('.result');
 
     var num ,numArray,strike,ball,wrong;
+ 
 
 
     function init(){
@@ -34,7 +35,8 @@
         }else {
             //홈런이 아닐때
             wrong++;
-            if(wrong = 10){
+            console.log(wrong);
+            if(wrong === 10){
                 result.innerHTML="10 Out! Game over!"
                 init();
             } else{
